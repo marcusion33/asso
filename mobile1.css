@@ -1,0 +1,48 @@
+.title {
+    text-align: center;
+    font-family: cursive;
+    font: bolt 20px ;
+    text-decoration: underline violet;
+  }
+  
+  .para {
+    font-family: fantasy;
+    font: italic bold 16px monospace;
+    text-align: center;
+    color: blue;
+    text-decoration: underline gold;
+  }
+  .post-img{
+    padding: 0;
+    margin: 20px;
+  }
+  .post-frame{
+    padding: 0;
+    margin: 20px;
+  }
+  @media only screen and (max-width: 1023px) {
+  /*ici le CSS s'appliquera aux ecran de 600px inf ou égal*/
+    .post-img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .post-frame {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  @media only screen and (min-width: 1024px) {
+  /*ici le CSS s'appliquera aux ecran de 1025px sup ou égal*/
+    .post-frame {
+      display: flex right;
+      width: 40%;
+      height: auto;
+    }
+  
+    .post-img {
+      width: 30%;
+      height: auto;
+    }
+  }
