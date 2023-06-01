@@ -1,0 +1,57 @@
+.body {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #E2E5E0;
+  }
+  *{box-sizing: border-box; }
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .post{
+    margin: 10px;
+    background-color: whitesmoke;
+    border: 1px solid gold;
+  }
+  
+  .post_title{
+    margin-top: 0;
+    text-align: center;
+    text-decoration: underline indigo;
+  }
+  .post_text{
+    padding: 10px;
+    font: italic bold 15px monospace;
+    background-color: lightsteelblue;
+  }
+  
+  @media only screen and (min-width: 600px){
+    /*ici le CSS s'appliquera aux ecran de 600px et plus*/
+    .post_img{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .post_text{
+      flex: 1;
+      min-width: 45%;
+    }
+  }
+  
+  @media only screen and (min-width: 900px){
+    /*ici le CSS s'appliquera aux ecran de 900 et plus*/
+    .post{
+      width: 500px;
+      margin: auto;
+    }
+    .post_text{
+      width: 90%;
+      padding: 20px;
+      margin: 20px;
+    }
+    .post_title{
+      text-align: center;
+    }
+  }
